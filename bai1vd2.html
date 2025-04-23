@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        .back-button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #3498db;
+          color: rgb(11, 9, 9);
+          text-decoration: none;
+          border-radius: 8px;
+          font-weight: bold;
+        }
+        .back-button:hover {
+          background-color: #f0f2f4;
+        }
+        </style>
+        
+        <a href="index.html" class="back-button">🏠Trang Chủ</a>
+<h2>Finding HTML Elements by Tag Name</h2>
+
+<p>Hello world</p>
+
+<p class="intro">The DOM is very useful.</p>
+<p class="intro">This example demonstates the
+<b>getElementsByClassName</b> method.</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementsByClassName("intro");
+document.getElementById("demo").innerHTML =
+'The first paragraph (index 0) with class:"intro": ' + x[0].innerHTML;
+</script>
+
+</body>
+</html>
+

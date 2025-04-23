@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo thao tác với class</title>
+  <style>
+    .font_chu {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode';
+    }
+
+    .mau_chu {
+      color: rgb(218, 25, 118);
+    }
+
+    .co_chu {
+      font-size: 13px;
+      transition: font-size 0.3s ease; /* Thêm hiệu ứng chuyển đổi mượt */
+    }
+  </style>
+  <style>
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    .back-button:hover {
+      background-color: #2980b9;
+    }
+    </style>
+    
+    <a href="index.html" class="back-button">🏠Trang Chủ</a>    
+</head>
+<body>   
+  <h1 class="font_chu" id="td1">Demo về các thao tác với class</h1>
+  <button onclick="tonho()">Try it</button>
+
+  <script>
+    var pt = document.getElementById("td1");
+
+    // Thêm 2 class lúc đầu
+    pt.classList.add("mau_chu", "co_chu");
+
+    // Hàm toggle class "co_chu"
+    function tonho() {
+      pt.classList.toggle("co_chu");
+    }
+  </script>
+</body>
+</html>
