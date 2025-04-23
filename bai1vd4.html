@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giao diện cuộn chuột</title>
+  <style>
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      font-family: Segoe UI;
+      font-size: 13px;
+    }
+
+    .menu {
+      height: 100px;
+      background-color: rgb(13, 121, 13);
+      line-height: 100px;
+      color: white;
+      position: fixed;
+      width: 900px;
+    }
+
+    .trai {
+      float: left;
+      font-size: 3em;
+      margin-left: 125px;
+      transition: 0.4s;
+      height: 100px;
+    }
+
+    .phai {
+      float: right;
+      transition: 0.4s;
+      height: 100px;
+    }
+
+    .phai a {
+      text-decoration: none;
+      padding-right: 40px;
+      font-size: 1.5em;
+      color: wheat;
+    }
+
+    .content {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 120px; /* Để tránh menu bị che nội dung */
+    }
+
+    .nholaitrai {
+      font-size: 2em;
+      margin-left: 100px;
+      color: black;
+      height: 80px;
+    }
+
+    .nholaiphai {
+      font-size: 1.2em;
+      padding-right: 30px;
+      height: 80px;
+    }
+
+    .cot {
+      width: 20%;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+    <style>
+        .back-button {
+          display: inline-block;
+          padding: 10px 20px;
+          background-color: #3498db;
+          color: rgb(11, 9, 9);
+          text-decoration: none;
+          border-radius: 8px;
+          font-weight: bold;
+        }
+        .back-button:hover {
+          background-color: #f0f2f4;
+        }
+        </style>
+        
+        <a href="index.html" class="back-button">🏠Trang Chủ</a>
+  <div class="container">
+    <div class="menu">
+      <div class="trai">LOGO</div>
+      <div class="phai">
+        <a href="#">Trang chủ</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Liên hệ</a>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="cot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</div>
+      <div class="cot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</div>
+      <div class="cot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</div>
+      <div class="cot">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.</div>
+    </div>
+  </div>
+</body>
+</html>
